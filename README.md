@@ -1,4 +1,4 @@
-# cards
+# Dolar Today 
 
 ## Project setup
 ```
