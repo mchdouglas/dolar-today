@@ -7,7 +7,7 @@
       dark
       color="#ccc"
     >
-      <v-toolbar-title>Dolar </v-toolbar-title>
+      <v-toolbar-title>Dolar Atual</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -19,7 +19,7 @@
       
         <v-card-title primary-title>
           <div>
-            <h3 class="headline mb-0" >Dolar Atual</h3>
+            <h3 class="headline mb-0" >Dolar em Reais </h3>
             <p v-for="dado in card_text" :key="dado.id"> {{ dado.bid }} </p>
           </div>
         </v-card-title>
@@ -47,7 +47,6 @@
         async carregarDados() {
           const urlApi = `http://economia.awesomeapi.com.br/json/all/USD-BRL`
           this.card_text = await fetch(urlApi).then(res => res.json())
-          console.log(this.card_text)
         }
       },
   }
