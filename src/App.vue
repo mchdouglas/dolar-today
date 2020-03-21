@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     async carregarDados () {
-      const urlApi = `http://economia.awesomeapi.com.br/json/all/USD-BRL`
+      const urlApi = `https://economia.awesomeapi.com.br/json/all/USD-BRL`
       this.card_text = await fetch(urlApi).then(res => res.json())
     }
   },
