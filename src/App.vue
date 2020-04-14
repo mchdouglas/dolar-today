@@ -15,7 +15,7 @@
 
       </v-app-bar>
       <v-img
-        src="https://image.freepik.com/fotos-gratis/sinal-de-dolar-simbolo_2227-466.jpg"
+        src=""
         aspect-ratio="1"
       ></v-img>
 
@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     async carregarDados () {
-      const urlApi = `https://economia.awesomeapi.com.br/json/all/USD-BRL`
+      const urlApi = ``
       this.card_text = await fetch(urlApi).then(res => res.json())
     }
   },
